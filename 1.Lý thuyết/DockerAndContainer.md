@@ -17,3 +17,10 @@
 - Triển khai microserivces
 - Khi cần scale ứng dụng một cách linh hoạt
 - Chỉ cần config một lần để chạy nhiều nơi
+
+
+## Các lệnh docker
+- docker ps : hiển thị danh sách các container đang được chạy
+- docker ps - a : hiển thị các container hiện có
+- docker-compose -f path-to-docker-compose-yml -f path-to-docker-compose-override-yml up : tạo container từ file yml
+ 
