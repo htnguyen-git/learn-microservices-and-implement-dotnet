@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "path": "Services\\Catalog\\Catalog.API\\Catalog.API.sln",
+    "projects": [
+      "..\\..\\Basket\\Basket.API\\Basket.API.csproj",
+      "Catalog.API.csproj",
+      "docker-compose.dcproj"
+    ]
+  }
+}
