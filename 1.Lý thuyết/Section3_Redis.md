@@ -14,5 +14,5 @@
 - redis-cli
 - set key value    => get key -> return "value"
 - set name nguyen  => get name -> return "nguyen"
-
+- KEYS *
 

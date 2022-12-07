@@ -26,8 +26,18 @@ namespace Discount.gRPC.Services
             {
                 throw new RpcException(new Status(StatusCode.NotFound, $"Discount with ProductName = {request.ProductName} is not found"));
             }
-            var coupontModel = _mapper.Map<CouponModel>(coupon);
+            var coupontModel = ToModel(coupon);
             return coupontModel;
+        }
+        private CouponModel ToModel(Coupon record)
+        {
+            return new CouponModel
+            {
+                Amount = record.Amount,
+                Description = record.Description,
+                Id = record.Id,
+                ProductName = record.ProductName
+            };
         }
 
         public override async Task<CouponModel> CreateDiscount(CreateDiscountRequest request, ServerCallContext context)
