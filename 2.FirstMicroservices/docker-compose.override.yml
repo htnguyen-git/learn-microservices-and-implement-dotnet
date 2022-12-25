@@ -61,6 +61,7 @@ services:
       - "8001:80"
 
   catalog.api:
+    container_name: catalog.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "DatabaseSettings__ConnectingString=mongodb://catalogdb:27017"
